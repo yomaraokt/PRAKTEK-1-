@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+  h1, body, textarea{
+        font-family: 'Times New Roman', Times;
+    }
+    input.btn-brws{
+        cursor: pointer;
+    }
+    input.btn-sbmt{
+    cursor: pointer;
+    }
+    hr{
+       width: 32%;
+        position: fixed;
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Membuat Form </title>
+</head>
+<body>
+    <h1>Form HTML</h1>
+    <hr><br>
+    Name: <input type="text" name="nama">
+    <br><br>
+    Gender: <input type="radio" name="gender_M" value="M"> Man 
+    <input type="radio" name="gender_W" value="W"> Woman
+    <br><br>
+    Address: <input type="text" name="alamat">
+    <br><br>
+    Countries: <select name="Negara"> 
+        <option value="id">Indonesia</option>
+        <option value="us">United States of America</option>
+        <option value="ar">Argentina</option>
+        <option value="au">Australia</option>
+        <option value="jp">Japan</option>
+        <option value="sg">Singapore</option>
+    </select>
+    <br><br>
+    Email: <input type="text" name="email">
+    <br><br>
+    Photo: <input type="text" name="foto">
+    <input class="btn-brws" type="Button" name="Browse" value="Browse..">
+    <br><br>
+    Comment: <textarea name="komentar" cols="50" rows="5"></textarea>
+    <input class= "btn-sbmt" type="Submit" name="submit" value="Submit">
+    <hr>
+</body>
+</html>
