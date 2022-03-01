@@ -1,0 +1,78 @@
+body{
+    background-repeat: none;
+    background-image: url(background.jpg);
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.judul-contact{
+    color: hsl(33, 100%, 60%);
+    text-shadow: 0 0 5px hsl(33, 100%, 45%), 0 0 10px hsl(135, 68%, 20%);
+    font-size: 50px;
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.button{
+    background-color: rgba(0, 84, 71, 0.6);
+    border-radius: 1rem;
+    padding: 16px;
+    font-weight: bold;
+}
+.button a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px;
+    color: hsl(33, 100%, 60%);
+    cursor: pointer;
+    
+}
+a:hover{
+    color: white;
+}
+a.kontak:visited{
+    color: white;
+}
+.cont-contents{
+    margin: 0 80px;
+    background-color: rgb(210, 210, 210);
+    width: 35%;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px black, 0 6px 20px 5px #0000003d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+ul{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.linkedIn:visited{
+    color: red;
+}
+.linkedIn:hover{
+    color: blue;
+}
+.linkedIn{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+h1{
+        padding-left: 20px;
+        color: rgba(0, 84, 71, 1);
+}
+.ig{
+    list-style-image: url(ig.png);
+}
+.wa{
+    list-style-image: url(wa.png);
+}
+.li{
+    list-style-image: url(linkedin.png);
+}
