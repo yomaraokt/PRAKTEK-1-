@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KONVERTOR DAN KALKULATOR</title>
+	<link rel="stylesheet" href="tugas_js.css">
+</head>
+<script>
+	function konv() {
+		var val1 = document.convert.angk.value
+		if (val1 >= 0 && val1 <= 40) {
+			document.convert.hsl.value = "E"
+		} else if (val1 >= 41 && val1 <= 55) {
+			document.convert.hsl.value = "D"
+		} else if (val1 >= 56 && val1 <= 60) {
+			document.convert.hsl.value = "C"
+		} else if (val1 >= 61 && val1 <= 65) {
+			document.convert.hsl.value = "BC"
+		} else if (val1 >= 66 && val1 <= 70) {
+			document.convert.hsl.value = "B"
+		} else if (val1 >= 71 && val1 <= 80) {
+			document.convert.hsl.value = "AB"
+		} else if (val1 >= 81 && val1 <= 100) {
+			document.convert.hsl.value = "A"
+		} else {
+			document.convert.hsl.value = "Angka Tidak Terdeteksi"
+		}
+	}
+	function pjl() {
+		var val1 = Number(document.cal.bil1.value)
+		var val2 = Number(document.cal.bil2.value)
+		var hasil = val1+val2
+
+		document.cal.res.value = hasil
+	}
+	function krg() {
+		var val1 = Number(document.cal.bil1.value)
+		var val2 = Number(document.cal.bil2.value)
+		var hasil = val1-val2
+
+		document.cal.res.value = hasil
+	}
+	function kl() {
+		var val1 = Number(document.cal.bil1.value)
+		var val2 = Number(document.cal.bil2.value)
+		var hasil = val1*val2
+
+		document.cal.res.value = hasil
+	}
+	function bg() {
+		var val1 = Number(document.cal.bil1.value)
+		var val2 = Number(document.cal.bil2.value)
+		var hasil = val1/val2
+
+		document.cal.res.value = hasil
+	}
+	function mdl() {
+		var val1 = Number(document.cal.bil1.value)
+		var val2 = Number(document.cal.bil2.value)
+		var hasil = val1%val2
+
+		document.cal.res.value = hasil
+	}
+</script>
+<body>
+	<div class="knv_klk">
+		<div class="knv">
+			<form name="convert">
+				<h2>KONVERTOR</h2>
+				<input type="text" name="angk"> <input type="text" name="hsl">
+				<br> </br>
+				<input type="button" name="bconvert" value="UBAH" onclick=konv()>
+			</form>
+		</div>
+		<div class="klk">
+			<form name="cal">
+				<h2>KALKULATOR</h2>
+				<input type="text" name="bil1"> <input type="text" name="bil2">
+				<br> </br>
+				<input type="button" name="op" value="+" onclick=pjl()> 
+				<input type="button" name="op" value="-" onclick=krg()>
+				<input type="button" name="op" value="X" onclick=kl()>
+				<input type="button" name="op" value="/" onclick=bg()>
+				<input type="button" name="op" value="%" onclick=mdl()>
+				<br> </br>
+				<input type="text" name="res">
+			</form>
+			<br> </br>
+			<script type="text/javascript">
+				document.write("Dimodifikasi terakhir pada " + document.lastModified);
+			</script>
+		</div>
+	</div>			
+</body>
+</html>

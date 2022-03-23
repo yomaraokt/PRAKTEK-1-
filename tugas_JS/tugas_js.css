@@ -1,0 +1,23 @@
+body{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.knv_klk{
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+}
+.klk{
+    margin-left: 200px;
+}
+.knv input{
+    border-radius: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+}
+.klk input{
+    border-radius: 0.4rem;
+    text-align: center;
+    cursor: pointer;
+}
