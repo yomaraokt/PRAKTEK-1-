@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Exercise</title>
+    <link rel="stylesheet" href="tugas_JQuery.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".hide").click(function() {$(".foto_Valo").hide("slow")});
+            $(".show").click(function() {$(".foto_Valo").show("slow")});
+            $(".hide2").click(function() {$(".foto_Apex").hide("slow")});
+            $(".show2").click(function() {$(".foto_Apex").show("slow")});
+        });
+        $(document).ready(function(){
+            $(".kotak").dblclick(function(){
+                $(this).css("background-color", "red")});
+        });
+        $(document).ready(function(){
+            $(".fade_Out").click(function(){
+            $(".box").fadeOut()
+        });
+        });
+        $(document).ready(function(){
+            $(".fade_In").click(function(){
+            $(".box").fadeIn()
+        });
+        });
+        $(document).ready(function(){
+            $(".fade_To").click(function(){
+            $(".box").fadeTo("fast", 0.3)
+        });
+        });
+    </script>
+</head>
+<body>
+    <center><h1>Hide and Show Photo</h1></center>
+    <hr>
+    <div class="hs_Photo">
+        <ul class="list_Photo">
+            <li><button class="hide">Hide Photo</button></li>
+            <li><button class="show">Show Photo</button></li>
+            <li class="button2"><button class="hide2">Hide Photo</button></li>
+            <li class="button2"><button class="show2">Show Photo</button></li>
+        </ul>           
+    </div>
+    <div class="pembungkus_Foto">
+        <div class="div_FotoValo">
+            <img class="foto_Valo" src="valorant.png">
+            <br>
+            <img class="foto_Valo" src="valorant2.jpg">
+        </div>
+        <div class="div_FotoApex">
+            <img class="foto_Apex" src="Apex.jpg">
+            <br>
+            <img class="foto_Apex" src="apex2.jpg">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <center> <h1>Double Click Events</h1> </center>
+    <div class="event_DC">
+            <ul>
+                    <li class="kotak">Click 2x</li>
+                    <li class="kotak">Click 2x</li>
+                    <li class="kotak">Click 2x</li>
+                    <li class="kotak">Click 2x</li>
+            </ul>
+    </div>
+    <hr>
+   <center> <h1 class="fade">Fade Effects</h1> </center>
+    <div class="button_Fade">
+        <button id="fd" class="fade_Out">FadeOut</button>
+        <button id="fd" class="fade_In">FadeIn</button>
+        <button id="fd" class="fade_To">FadeTo</button>          
+    </div>
+    <div class="box"></div>
+    <br><br><br>
+    <hr>
+    <br><br><br>
+</body>
+</html>

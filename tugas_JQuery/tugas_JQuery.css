@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto_Valo{
+    width: 600px;
+    height: 300px;
+
+}
+.hs_Photo{
+    background-color: #333;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.list_Photo{
+  list-style-type: none;
+  overflow: hidden;
+}
+li{
+    float: left;
+}
+li button{
+    border-radius: 0.4rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: aqua;
+    color: #333;
+    border-color: red;
+    border-width: 3px;
+    cursor: pointer;
+}
+.button2{
+    float: right;
+    margin-right: 10px;
+}
+.foto_Apex{
+    float: right;
+    width: 600px;
+    height: 300px;
+}
+.pembungkus_Foto{
+    display: flex;
+    justify-content: space-between;
+}
+.div_FotoApex{
+    float: right;
+}
+.event_DC{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kotak{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    margin: 0 20px;
+    list-style-type: none;
+    border: 3px dashed rgb(16, 136, 0);
+}
+.button_Fade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+#fd{
+    margin: 20px 20px;
+    background-color: aqua;
+    color: #333;
+    border-color: red;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    margin: 0 auto;
+    border: 5px double rgb(16, 136, 0);
+}
